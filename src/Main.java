@@ -26,5 +26,4 @@ public class Main {
         p.endure();
         s.jump(p.name, ba.name);
     }
-    ///////привет куку
 }
