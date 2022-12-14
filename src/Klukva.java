@@ -5,6 +5,14 @@ public class Klukva extends Person {
         this.status = Moves.Sleep;
     }
 
+    public void check() throws NameException{
+        if (name.length() > 3){
+            System.out.print("");
+        } else {
+            throw new NameException(name + " - неподходящее имя! Укажите имя которое будет больше трёх букв");
+        }
+    }
+
     public void wakeup() {
         Moves s = this.status;
         this.status = Moves.Unsleep;

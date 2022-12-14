@@ -3,6 +3,14 @@ public class Pnigl extends Person implements Fightable {
         this.name = "Пнигль";
     }
 
+    public void check() throws NameException{
+        if (name.length() > 3){
+            System.out.print("");
+        } else {
+            throw new NameException(name + " - неподходящее имя! Укажите имя которое будет больше трёх букв");
+        }
+    }
+
     public void fight() {
         Moves s = this.status;
         this.status = Moves.Fight;

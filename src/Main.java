@@ -15,6 +15,36 @@ public class Main {
         Policeman.SecondSquad ps = new Policeman.SecondSquad();
         Skrigl sk = new Skrigl();
 
+        try {
+            k.check();
+        }catch (NameException e){
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            b.check();
+        }catch (NameException e){
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            p.check();
+        }catch (NameException e){
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            r.check();
+        }catch (NameException e){
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            sk.check();
+        }catch (NameException e){
+            System.out.println(e.getMessage());
+        }
+
         po.separation();
         pf.goDownToLeft();
         ps.doDownToRight();
@@ -40,7 +70,6 @@ public class Main {
         ba.hit(p);
         p.endure();
         s.jump(p.name, ba.name);
-        //----------
         b.stayOnLand();
         p.fell();
         sk.hurry(b);

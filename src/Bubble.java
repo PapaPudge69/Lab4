@@ -4,6 +4,14 @@ public class Bubble extends Person implements NotСonfusable {
         this.status = Moves.Sleep;
     }
 
+    public void check() throws NameException{
+        if (name.length() > 3){
+            System.out.print("");
+        } else {
+            throw new NameException(name + " - неподходящее имя! Укажите имя которое будет больше трёх букв");
+        }
+    }
+
     public void wakeup() {
         this.status = Moves.Unsleep;
     }

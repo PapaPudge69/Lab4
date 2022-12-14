@@ -3,6 +3,14 @@ public class Rvigl extends Person {
         this.name = "Рвигль";
     }
 
+    public void check() throws NameException{
+        if (name.length() > 3){
+            System.out.print("");
+        } else {
+            throw new NameException(name + " - неподходящее имя! Укажите имя которое будет больше трёх букв");
+        }
+    }
+
     public void wentDown(){
         System.out.print("Очутившись внизу, ");
     }
