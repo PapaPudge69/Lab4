@@ -6,7 +6,10 @@ public enum Moves {
     Lose,
     Scream,
     Fight,
-    Confused;
+    Confused,
+    SwimInWater,
+    LocatedOnLand;
+
 
     private Moves() {
     }
