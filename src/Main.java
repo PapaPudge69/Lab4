@@ -40,7 +40,6 @@ public class Main {
         ba.hit(p);
         p.endure();
         s.jump(p.name, ba.name);
-        //----------
         b.stayOnLand();
         p.fell();
         sk.hurry(b);
