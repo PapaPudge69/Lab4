@@ -15,4 +15,13 @@ public class Pnigl extends Person implements Fightable {
     public void endure() {
         System.out.println(this.name + " получил удар током");
     }
+
+
+    public void fell(){
+        System.out.println(name + " упал словно подкошенный");
+    }
+
+    public void beUnconscious(Person s){
+        System.out.println(name + " никак не мог прийти в себя, после того как ему в нос попала " + s);
+    }
 }

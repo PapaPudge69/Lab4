@@ -10,6 +10,21 @@ public class Main {
         People pe = new People();
         Baton ba = new Baton();
         Spark s = new Spark();
+        Rvigl r = new Rvigl();
+        Policeman.FirstSquad pf = new Policeman.FirstSquad();
+        Policeman.SecondSquad ps = new Policeman.SecondSquad();
+        Skrigl sk = new Skrigl();
+
+        po.separation();
+        pf.goDownToLeft();
+        ps.doDownToRight();
+        r.wentDown();
+        r.tol.turnOnLantern();
+        r.hiss();
+        System.out.println("\"" + r.say("Идём тихо и аккуратно.") + "\"");
+        po.turnOnLantern();
+        po.shine();
+        po.moved();
         pe.sleep();
         po.grab();
         k.wakeup();
@@ -25,5 +40,23 @@ public class Main {
         ba.hit(p);
         p.endure();
         s.jump(p.name, ba.name);
+        //----------
+        b.stayOnLand();
+        p.fell();
+        sk.hurry(b);
+        b.chuck(ba,sk);
+        b.take();
+        b.jumpToWaterStatus();
+        try {
+            b.jumpTo();
+            b.fastSwiming();
+            po.watch(b);
+            po.drag(pe,p);
+            p.beUnconscious(s);
+        } catch (JumpToWaterException e) {
+            System.out.println(e.getMessage());
+        }
+
+
     }
 }

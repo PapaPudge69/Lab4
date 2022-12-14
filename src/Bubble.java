@@ -1,12 +1,10 @@
 public class Bubble extends Person implements NotСonfusable {
     public Bubble() {
         this.name = "Пузырь";
-        Moves s = this.status;
         this.status = Moves.Sleep;
     }
 
     public void wakeup() {
-        Moves s = this.status;
         this.status = Moves.Unsleep;
     }
 
@@ -20,7 +18,36 @@ public class Bubble extends Person implements NotСonfusable {
         System.out.println(this.name + " вырвал из рук " + target.name + " дубинку");
     }
 
+    public void chuck(Person ba, Person sk){
+        System.out.println(name + " швырнул электрическую " + ba + " в спешившего к нему полицейского " + sk);
+    }
+
     public String str(String stroka) {
         return stroka;
     }
+
+    public void take(){
+        System.out.println(name + " схватил свою надувную подушку");
+    }
+    public void stayOnLand(){
+        this.status = Moves.LocatedOnLand;
+    }
+
+
+    public void jumpToWaterStatus(){
+        this.status = Moves.SwimInWater;
+    }
+    public void jumpTo() throws JumpToWaterException{
+        if (this.status == Moves.SwimInWater){
+            System.out.println(", одним прыжком подскочил к берегу и прыгнул в воду.");
+        }
+        else {
+            throw new JumpToWaterException(this.name + " должен прыгнуть в воду, иначе другие действия невозможны");
+        }
+    }
+
+    public void fastSwiming(){
+        System.out.println(name + " плыл по воде, быстро удаляясь от берега.");
+    }
+
 }

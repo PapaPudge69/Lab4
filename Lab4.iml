@@ -7,11 +7,47 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="LABA3" level="project" />
+    <orderEntry type="library" name="LABA3" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://E:/Рабочий стол/LABA3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/Загрузки/Telegram Desktop/labaprog3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/Загрузки/Telegram Desktop/labaprog3 (2).jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/Рабочий стол/labaprog3 (3).jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/Загрузки/Telegram Desktop/lab3.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
