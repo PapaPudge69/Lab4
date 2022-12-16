@@ -8,7 +8,6 @@ public class Main {
         Pnigl p = new Pnigl();
         Policeman po = new Policeman();
         People pe = new People();
-        Baton ba = new Baton();
         Spark s = new Spark();
         Rvigl r = new Rvigl();
         Policeman.FirstSquad pf = new Policeman.FirstSquad();
@@ -17,29 +16,9 @@ public class Main {
 
         try {
             k.check();
-        }catch (NameException e){
-            System.out.println(e.getMessage());
-        }
-
-        try {
             b.check();
-        }catch (NameException e){
-            System.out.println(e.getMessage());
-        }
-
-        try {
             p.check();
-        }catch (NameException e){
-            System.out.println(e.getMessage());
-        }
-
-        try {
             r.check();
-        }catch (NameException e){
-            System.out.println(e.getMessage());
-        }
-
-        try {
             sk.check();
         }catch (NameException e){
             System.out.println(e.getMessage());
@@ -67,13 +46,13 @@ public class Main {
         pe.confuse();
         b.notconfusable();
         b.pullOut(p);
-        ba.hit(p);
+        Pnigl.Baton.hit(p);
         p.endure();
-        s.jump(p.name, ba.name);
+        s.jump(p.name);
         b.stayOnLand();
         p.fell();
         sk.hurry(b);
-        b.chuck(ba,sk);
+        b.chuck(b);
         b.take();
         b.jumpToWaterStatus();
         try {
@@ -85,7 +64,6 @@ public class Main {
         } catch (JumpToWaterException e) {
             System.out.println(e.getMessage());
         }
-
 
     }
 }

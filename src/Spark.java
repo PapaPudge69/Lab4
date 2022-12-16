@@ -3,7 +3,7 @@ public class Spark extends Person {
         this.name = "Искра";
     }
 
-    public void jump(String i, String j) {
-        System.out.println(this.name + " проскочила между " + i + " " + j);
+    public void jump(String i) {
+        System.out.println(this.name + " проскочила между " + i + " и Дубинка ");
     }
 }

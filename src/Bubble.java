@@ -26,8 +26,8 @@ public class Bubble extends Person implements NotСonfusable {
         System.out.println(this.name + " вырвал из рук " + target.name + " дубинку");
     }
 
-    public void chuck(Person ba, Person sk){
-        System.out.println(name + " швырнул электрическую " + ba + " в спешившего к нему полицейского " + sk);
+    public void chuck(Person sk){
+        System.out.println(name + " швырнул электрическую Дубинка  в спешившего к нему полицейского " + sk);
     }
 
     public String str(String stroka) {

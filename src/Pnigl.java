@@ -12,16 +12,23 @@ public class Pnigl extends Person implements Fightable {
     }
 
     public void fight() {
-        Moves s = this.status;
         this.status = Moves.Fight;
     }
 
-    public String str(String stroka) {
+    public class Baton extends Person {
+        public static void hit(Pnigl target) {
+            System.out.println("Ударил "+ target + " Дубинкой" );
+        }
+    }
+
+    Baton ba = new Baton();
+
+    public String say(String stroka) {
         return stroka;
     }
 
     public void endure() {
-        System.out.println(this.name + " получил удар током");
+        System.out.println(name + " получил удар током");
     }
 
 
